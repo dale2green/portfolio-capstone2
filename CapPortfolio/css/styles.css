@@ -1,0 +1,194 @@
+
+
+/*
+colors
+
+1 #e5faee
+2 e5faf9
+3 e5f1fa
+light blue and cobolt #CADCFC, #8AB6F9, #00246B
+
+
+complementary #cadcfc   #fceaca
+complementary #8ab6f9   #f9cd8a
+
+
+*/
+* {
+  --bg1: #cadcfc;
+  --bg2: #8ab6f9;
+  --bg3: #00246b;
+  --bg4: #fceaca;
+  --bg5: #f9cd8a;
+  --bg6: #b6f98a;
+  --bg7: #6698cc;
+  font-size: 16px;
+  color: var(--bg3);
+}
+
+.container {
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-self: center;
+  align-items: center;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 65vh;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 48vh;
+  max-width: 70vw;
+}
+section {
+  padding: 60px 0;
+}
+
+h1 {
+  font-size: 5.5rem;
+  color: var(--bg3);
+  font-family: "Sacramento", cursive;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--bg3);
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 2rem;
+}
+.sub-text {
+  color: var(--bg3);
+  margin: 6px 0;
+  font-size: 2.15rem;
+}
+
+.profile-sub-text,
+ .am-sub,
+ .get-me {
+  font-size: 1.35rem;
+  width: 80%;
+  margin: 8px 0 8px 0;
+  line-height: 1.3;
+  letter-spacing: 1.4;
+}
+
+.profile-sub-text {
+  /* width: 70%; */
+  text-align: center;
+}
+
+.profile-pic {
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 30px 0;
+}
+
+.computer,
+.dalebike {
+  height: 200px;
+  border-radius: 2%;
+  padding: 20px;
+}
+
+.showme {
+  display: flex;
+  flex-direction: row;
+}
+
+.skillinfo {
+  width: 400px;
+  padding: 2px 10px 2px 10px;
+}
+
+.get-me {
+  width: 500px;
+  text-align: center;
+}
+
+.email-me {
+  margin: 20px 0 20px 0;
+}
+
+.email-btn {
+  background-color: var(--bg7);
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.email-btn:hover {
+  transform: scale(1.25);
+}
+
+.checkit {
+  color: var(--bg7);
+  display: flex;
+  flex-direction: row;
+  font-size: 1.35rem;  
+}
+
+.checkit:hover {
+  color: white;
+}
+
+.credit-sub {
+  display: flex;
+  flex-direction: row;
+  font-size: .8rem;  
+  margin: 24px;
+  padding: 10px 0;
+
+}
+
+.fifth {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  
+}
+
+
+#hero,
+#showcase,
+#contactme {
+  background-color: var(--bg2);
+ }
+
+@media (max-width: 680px) {
+  .showme {
+  display: flex;
+  flex-direction: column;
+}
+}
